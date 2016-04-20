@@ -170,12 +170,6 @@ START_TEST(test_2d_area_triangle)
     double area = coord_2d_area_triangle(&a, &b, &c);
 
     ck_assert(testarea == area);
-
-
-
-
-
-
 }
 END_TEST
 
@@ -196,7 +190,7 @@ Suite* coord_2d_suite(void)
     TCase* tc_2d_midpoint = tcase_create("coord_2d_midpoint");
     tcase_add_test(tc_2d_midpoint, test_2d_midpoint);
 
-    Tcase* tc_2d_area_triangle = tcase_create("coord_2d_area_triangle");
+    TCase* tc_2d_area_triangle = tcase_create("coord_2d_area_triangle");
     tcase_add_test(tc_2d_area_triangle, test_2d_area_triangle);
 
     /* Add Cases to Suite */
